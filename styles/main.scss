@@ -1,0 +1,69 @@
+$orange: #F89520;
+$grey: #232021;
+
+@import 'navigation.scss';
+@import 'header.scss';
+@import 'content.scss';
+@import 'footer.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Font/GothamBook.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/Gotham-Font/GothamBold.ttf');
+    font-weight: bold;
+}
+
+body{
+    overflow-x: hidden;
+
+    p{
+        line-height: 25px;
+        font-size: 18px;
+        font-family: 'Open Sans';
+    }
+
+    h1{
+        font-family: Gotham;
+    }
+
+    h2, h3{
+        font-size: 30px;
+        font-family: 'Raleway';
+    }
+}
+
+.sign-up{
+    background-color: $orange;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 45px;
+    border-radius: 50px;
+    font-size: 18px;
+    @media (max-width: 620px){
+        font-size: 16px;
+        width: 180px;
+        height: 40px;
+    }
+}
+
