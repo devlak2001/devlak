@@ -1,0 +1,289 @@
+.website-path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 96px;
+  margin-top: 20px;
+}
+
+.website-path .house-icon {
+  margin-right: 8px;
+}
+
+.website-path .current-page {
+  margin-left: 8px;
+}
+
+@media (max-width: 1000px) {
+  .website-path {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 870px) {
+  .website-path {
+    margin-top: 60px;
+  }
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 112px;
+}
+
+h1 .text-highlight, h1 .text-highlight-mobile {
+  position: absolute;
+  z-index: -1;
+}
+
+h1 .text-highlight {
+  left: -16px;
+  top: -22px;
+  height: 114px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  h1 .text-highlight {
+    display: none;
+  }
+}
+
+h1 .text-highlight-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  h1 .text-highlight-mobile {
+    display: block;
+    left: -6px;
+    top: -15px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.page-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 95px;
+}
+
+@media (max-width: 1023px) {
+  .page-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.page-content .company-stamp {
+  position: absolute;
+  left: 10%;
+  top: -150px;
+}
+
+@media (max-width: 900px) {
+  .page-content .company-stamp {
+    display: none;
+  }
+}
+
+.page-content .illustration {
+  margin-right: 90px;
+}
+
+@media (max-width: 1100px) {
+  .page-content .illustration {
+    margin-right: 45px;
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1100px) and (max-width: 1023px) {
+  .page-content .illustration {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 65px;
+    margin-right: 0;
+  }
+}
+
+.page-content form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: -ms-grid;
+  display: grid;
+  padding: 40px 35px 50px 35px;
+  border: 1px solid #7C7672;
+}
+
+.page-content form p {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.page-content form input[type="text"] {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.page-content form input[type='text'], .page-content form textarea {
+  border: 1px solid #7C7672;
+  padding-left: 20px;
+}
+
+.page-content form input[type='text']::-webkit-input-placeholder, .page-content form textarea::-webkit-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form input[type='text']:-ms-input-placeholder, .page-content form textarea:-ms-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form input[type='text']::-ms-input-placeholder, .page-content form textarea::-ms-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form input[type='text']::placeholder, .page-content form textarea::placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form input[type='text']:focus, .page-content form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.page-content form input[type="text"], .page-content form textarea, .page-content form button {
+  width: 100%;
+  background-color: transparent;
+}
+
+.page-content form textarea {
+  padding-top: 10px;
+  height: 96px;
+  margin-bottom: 25px;
+}
+
+.page-content form textarea::-webkit-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form textarea:-ms-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form textarea::-ms-input-placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form textarea::placeholder {
+  color: #3F3F3F;
+  font-family: Mulish;
+}
+
+.page-content form button {
+  border: none;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Mulish;
+  padding: 16px 0;
+  color: white;
+  font-size: 18px;
+}
+
+.page-content form button:hover {
+  cursor: url("../../home-page/images/cursor.png"), pointer;
+}
+
+.page-content form .privacy-policy {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.page-content form .privacy-policy input[type='checkbox'] {
+  border: 1px solid #3F3F3F;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+.page-content form .privacy-policy input[type='checkbox']:checked {
+  background: #3F3F3F;
+}
+
+.page-content form .privacy-policy input[type='checkbox']:checked::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: url("../../home-page/images/check-icon.svg");
+}
+
+.page-content form .privacy-policy input[type='checkbox']:hover {
+  cursor: url("../../home-page/images/cursor.png"), auto;
+}
+
+.page-content form .privacy-policy .agreement a {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .page-content form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 600px) and (max-width: 319px) {
+  .page-content form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/*# sourceMappingURL=contact-us.css.map */

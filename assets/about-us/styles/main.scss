@@ -1,0 +1,119 @@
+$black: #000000;
+$dark-grey: #3F3F3F;
+$light-grey: #7C7672;
+$green: #218242;
+$yellow: #FAE465;
+$dirty-white: #EEECE8;
+
+@import 'about-us.scss';
+
+body{
+    background-image: url('../../home-page/images/page-background.png');
+    background-position: left top;
+    background-color: $dirty-white;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px 60px 0 60px;
+    display: flex;
+    justify-content: center;
+    font-family: Mulish;
+
+    .page-wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 1px solid $light-grey;
+        max-width: 1320px;
+        padding: 24px 60px 0 60px;
+        @media (max-width: 1250px){
+            padding-left: 30px;
+            padding-right: 30px;
+            @media (max-width: 870px){
+                padding: 24px 20px 0 20px;
+                overflow-x: hidden;
+                @media (max-width: 319px){
+                    padding: 24px 10px 0 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px){
+        padding: 24px 30px 0 30px;
+        @media (max-width: 870px){
+            padding: 0;
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    & > a{
+        text-decoration: none;
+        color: $black;
+
+        &:hover{
+            cursor: url('../images/cursor.png'), auto;
+        }
+    }
+}
+
+h1, h2, h3{
+    font-family: Quattrocento;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+input, textarea{
+    appearance: none;
+
+    &:focus{
+        stroke: none;
+    }
+}
+
+.button-filled{
+    background-color: $black;
+    color: white;
+    &:hover{
+        background-color: #3F3F3F;
+    }
+}
+
+.button-border{
+    border: 1px solid black;
+    color: black;
+    &:hover{
+        border-color: #3F3F3F;
+        color: #3F3F3F;
+    }
+}
+
+.button-filled, .button-border, .basic-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-piece{
+    @media (max-width: 1180px){
+        display: none !important;
+    }
+}
+
+

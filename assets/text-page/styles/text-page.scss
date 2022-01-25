@@ -1,0 +1,215 @@
+
+$black: #000000;
+$dark-grey: #3F3F3F;
+$light-grey: #7C7672;
+$green: #218242;
+$yellow: #FAE465;
+$dirty-white: #EEECE8;
+
+.website-path{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 96px;
+    margin-top: 20px;
+
+    .house-icon{
+        margin-right: 8px;
+    }
+
+    .current-page{
+        margin-left: 8px;
+    }
+    @media (max-width: 1000px){
+        margin-bottom: 50px;
+        @media (max-width: 870px){
+            margin-top: 60px;
+        }
+    }
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    max-width: 1050px;
+    position: relative;
+
+    .company-stamp{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        @media (max-width: 970px){
+            display: none;
+        }
+    }
+    @media (max-width: 600px){
+        margin-bottom: 60px;
+    }
+    h1{
+        margin-bottom: 45px;
+        text-align: center;
+        @media (max-width: 600px){
+            margin-bottom: 18px;
+            font-size: 36px;
+            @media (max-width: 374px){
+                font-size: 24px;
+            }
+        }
+    }
+    .blog-info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .button-border{
+            margin-right: 30px;
+            font-weight: normal;
+            width: 150px;
+            height: 30px;
+            @media (max-width: 375px){
+                width: 120px;
+                margin-right: 15px;
+            }
+        }
+        @media (max-width: 600px){
+            margin-bottom: 60px;
+            @media (max-width: 375px){
+                font-size: 13px;
+            }
+        }
+    }
+
+    .image{
+        width: 100%;
+        max-width: 1050px;
+        height: 580px;
+        background-position: center;
+        background-size: cover;
+        @media (max-width: 1120px){
+            height: 450px;
+            @media (max-width: 600px){
+                height: 240px;
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1050px;
+    margin-bottom: 175px;
+
+    @media (max-width: 600px){
+        margin-bottom: 100px;
+    }
+
+    .blog-text{
+        display: flex;
+        justify-content: space-between;
+        p{
+            letter-spacing: 0.02em;
+            line-height: 35px;
+            font-size: 19px;
+            @media (max-width: 600px){
+                font-size: 18px;
+            }
+        }
+        h2{
+            font-size: 32px;
+            @media (max-width: 600px){
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        &:nth-of-type(1){
+            margin-bottom: 80px;
+            h2{
+                margin-bottom: 50px;
+                font-weight: bold;
+                @media (max-width: 600px){
+                    margin-bottom: 40px;
+                }
+            }
+            .text{
+                width: 65%;
+                padding-top: 60px;
+                @media (max-width: 900px){
+                    width: 100%;
+                    padding-top: 0;
+                }
+            }
+            @media (max-width: 600px){
+                margin-bottom: 60px;
+            }
+        }
+
+        &:nth-of-type(3){
+            .text{
+                width: 65%;
+                padding-top: 60px;
+                @media (max-width: 900px){
+                    width: 100%;
+                    padding-top: 0;
+                }
+            }
+        }
+        .image{
+            width: 30%;
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            @media (max-width: 900px){
+                display: none;
+            }
+        }
+    }
+    .did-you-know{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #7C7672;
+        margin-bottom: 50px;
+        @media (max-width: 600px){
+            margin-bottom: 60px;
+            padding: 40px 35px 50px 35px;
+            @media (max-width: 375px){
+                padding: 40px 15px 50px 15px;
+            }
+        }
+        h2{
+            margin-bottom: 20px;
+            font-size: 32px;
+            @media (max-width: 375px){
+                font-size: 26px;
+            }
+        }
+        p{
+            letter-spacing: 0.02em;
+            line-height: 35px;
+            font-size: 19px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .button-border{
+            width: 110px;
+            height: 50px;
+            @media (max-width: 600px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+

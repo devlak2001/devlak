@@ -1,0 +1,185 @@
+$black: #000000;
+$dark-grey: #3F3F3F;
+$light-grey: #7C7672;
+$green: #218242;
+$yellow: #FAE465;
+$dirty-white: #EEECE8;
+
+@import 'navigation.scss';
+@import 'footer.scss';
+
+body{
+    background-image: url('../images/page-background.png');
+    background-position: left top;
+    background-color: $dirty-white;
+    overflow-x: hidden;
+    position: relative;
+    padding: 20px 60px 0 60px;
+    display: flex;
+    justify-content: center;
+    font-family: Mulish;
+
+    .page-wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 1px solid $light-grey;
+        max-width: 1320px;
+        padding: 24px 60px 0 60px;
+        @media (max-width: 1250px){
+            padding-left: 30px;
+            padding-right: 30px;
+            @media (max-width: 870px){
+                padding: 24px 20px 0 20px;
+                overflow-x: hidden;
+                @media (max-width: 319px){
+                    padding: 24px 10px 0 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1200px){
+        padding: 24px 30px 0 30px;
+        @media (max-width: 870px){
+            padding: 0;
+        }
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    & > a{
+        text-decoration: none;
+        color: $black;
+
+        &:hover{
+            cursor: url('../images/cursor.png'), auto;
+        }
+    }
+}
+
+h1, h2, h3{
+    font-family: Quattrocento;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+input, textarea{
+    appearance: none;
+
+    &:focus{
+        stroke: none;
+    }
+}
+
+.button-filled{
+    background-color: $black;
+    color: white;
+    &:hover{
+        background-color: #3F3F3F;
+    }
+}
+
+.button-border{
+    border: 1px solid black;
+    color: black;
+    &:hover{
+        border-color: #3F3F3F;
+        color: #3F3F3F;
+    }
+}
+
+.button-filled, .button-border, .basic-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-piece{
+    @media (max-width: 1180px){
+        display: none !important;
+    }
+}
+
+#add-to-cart-popup{
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    width: 356px;
+    padding: 25px 30px 30px 30px;
+    position: fixed;
+    right: calc((100vw - 1440px) / 2 + 120px);
+    top: 115px;
+    background: #F9F9F9;
+    box-shadow: 1px 1px 54px rgba(0, 0, 0, 0.07);
+    &.active{
+        display: flex;
+    }   
+    @media (max-width: 1440px){
+        right: 120px;
+        @media (max-width: 600px){
+            top: 90px;
+            right: 20px;
+            width: calc(100vw - 40px);
+            @media (max-width: 360px){
+                padding: 25px 20px 30px 20px;
+                @media (max-width: 320px){
+                    width: calc(100vw - 20px);
+                    right: 10px;
+                }
+            }
+        }
+    }
+    h3{
+        color: #218242;
+        margin-bottom: 14px;
+        @media (max-width: 600px){
+            margin-bottom: 22px;
+            @media (max-width: 360px){
+                font-size: 18px;
+            }
+        }
+        
+    }
+    a{
+        display: flex;
+        align-items: center;
+
+        img{
+            display: inline-block;
+            margin-left: 24px;
+
+        }
+    }
+    .close-button{
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        width: 8.5px;
+        height: auto;
+        &:hover{
+            cursor: url('../images/cursor.png'), pointer;
+        }
+        @media (max-width: 600px){
+                width: 13px;
+        }
+    }
+}
+
+

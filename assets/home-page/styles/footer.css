@@ -1,0 +1,106 @@
+footer {
+  font-size: 14px;
+  width: 100%;
+  padding: 45px 55px 62px 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper .contact {
+  margin-right: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 176px;
+}
+
+footer .wrapper .contact .logo {
+  margin-bottom: 72px;
+  width: 100%;
+}
+
+footer .wrapper .contact .logo img {
+  width: 100%;
+}
+
+footer .wrapper .contact .social-media {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .wrapper a {
+  display: block;
+}
+
+footer .wrapper .links {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper .links .col {
+  margin-right: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .wrapper .links .col h3 {
+  margin-bottom: 22px;
+}
+
+footer .wrapper .links .col a {
+  margin-bottom: 15px;
+}
+
+footer .wrapper .links .col a:last-child {
+  margin-bottom: 0;
+}
+
+footer .wrapper .links .col a img {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+footer .wrapper .links .col:last-child {
+  margin-right: 0;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+/*# sourceMappingURL=footer.css.map */

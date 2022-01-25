@@ -1,0 +1,96 @@
+nav {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 36px;
+}
+
+nav #menu-toggle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .left-col > form, nav .left-col > a, nav .left-col > div, nav .left-col .links a, nav .right-col > form, nav .right-col > a, nav .right-col > div, nav .right-col .links a {
+  margin-right: 34px;
+}
+
+nav .left-col {
+  margin-left: 72px;
+}
+
+nav .left-col .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+nav .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .right-col form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .right-col form input {
+  background: none;
+  border: none;
+  color: #9D9D9D;
+  width: 55px;
+  margin-left: 10px;
+}
+
+nav .right-col .profile-icon {
+  display: block;
+  margin-right: 0;
+}
+
+nav .menu-popup {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+nav .menu-popup a {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=navigation.css.map */

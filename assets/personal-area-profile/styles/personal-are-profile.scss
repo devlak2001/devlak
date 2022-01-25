@@ -1,0 +1,175 @@
+.website-path{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 96px;
+    margin-top: 20px;
+
+    .house-icon{
+        margin-right: 8px;
+    }
+
+    .current-page{
+        margin-left: 8px;
+    }
+    @media (max-width: 1000px){
+        margin-bottom: 45px;
+        @media (max-width: 870px){
+            margin-top: 60px;
+            @media (max-width: 600px){
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+.page-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 130px;
+    @media (max-width: 600px){
+        margin-bottom: 100px;
+    }
+    h1{
+        margin-bottom: 100px;
+        @media (max-width: 600px){
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+    .main-content{
+        width: 100%;
+        position: relative;
+        display: flex;
+        min-height: 400px;
+        @media (max-width: 700px){
+            flex-direction: column;
+        }
+        .side-bar{
+            margin-right: 120px;
+            font-size: 18px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            li{
+                margin-bottom: 40px;
+
+                a{
+                    overflow: visible;
+                    font-weight: 600;
+                    position: relative;
+                    .text-highlight{
+                        display: none;
+                        position: absolute;
+                        left: -15px;
+                        top: -10px;
+                        height: 50px;
+                        width: calc(100% + 20px);
+                        z-index: -1;
+                        min-width: 173px;
+                        @media (max-width: 350px){
+                            min-width: 120px;
+                        }
+                        
+                    }
+                    &.active{
+                        .text-highlight{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            @media (max-width: 700px){
+                padding-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 24px;
+                margin-bottom: 75px;
+                white-space: nowrap;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-right: 0;
+
+                li{
+                    margin-right: 20px;
+                    margin-bottom: 0;
+                }
+                
+            }
+        }
+        form{
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 450px;
+            display: grid;
+            @media (max-width: 1024px){
+                position: static;
+                transform: none;
+                @media (max-width: 700px){
+                    max-width: unset;
+                }
+            }
+
+            h3{
+                margin-bottom: 30px;
+            }
+            .row{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                &:not(:last-of-type){
+                    margin-bottom: 20px;
+                }
+                input{
+                    appearance: none;
+                    width: 100%;
+                    border: 1px solid #7C7672;
+                    padding-left: 20px;
+                    height: 40px;
+                    background: none;
+
+                    &::placeholder{
+                        color: #3F3F3F;
+                    }
+                    
+                    &:focus{
+                        border: 1px solid #000000;
+                        outline: none;
+                    }
+                    @media (max-width: 600px){
+                        padding-left: 15px;
+                    }
+                }
+                label{
+                    font-weight: 600;
+                    margin-bottom: 12px;
+                }
+            }
+            button{
+                appearance: none;
+                width: 100%;
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                margin-top: 50px;
+                font-size: 18px;
+                font-weight: 600;
+                color: white;
+                border: none;
+                @media (max-width: 600px){
+                    margin-top: 36px;
+                }
+            }
+        }
+    }
+}

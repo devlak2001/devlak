@@ -1,0 +1,208 @@
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 195px;
+}
+
+.portfolio h2 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.portfolio h2 .text-highlight {
+  position: absolute;
+  left: -61px;
+  top: -32px;
+  height: 111px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .portfolio h2 {
+    margin-bottom: 85px;
+    font-size: 32px;
+  }
+  .portfolio h2 .text-highlight {
+    left: -44px;
+    top: -24px;
+    height: 83px;
+  }
+}
+
+.portfolio .section-content {
+  width: 100%;
+  max-width: 920px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  row-gap: 16px;
+}
+
+.portfolio .section-content .product-image-slider {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  width: 100%;
+  height: 510px;
+  position: relative;
+}
+
+.portfolio .section-content .product-image-slider .product-image {
+  background-color: white;
+  -webkit-transition: opacity .5s ease-in;
+  transition: opacity .5s ease-in;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .portfolio .section-content .product-image-slider .product-image {
+    background-repeat: no-repeat;
+  }
+}
+
+.portfolio .section-content .product-image-slider .product-image + .product-image {
+  opacity: 0;
+}
+
+@media (max-width: 1000px) {
+  .portfolio .section-content .product-image-slider {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 600px) {
+  .portfolio .section-content .product-image-slider {
+    width: 320px;
+    height: 305px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 1000px) and (max-width: 600px) and (max-width: 375px) {
+  .portfolio .section-content .product-image-slider {
+    width: 100%;
+  }
+}
+
+.portfolio .section-content .product-slider-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.portfolio .section-content .product-slider-indicator .slide-indicator {
+  position: relative;
+  margin-right: 18px;
+  width: 20px;
+  height: 2px;
+  width: 20px;
+  background-color: #00000061;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.portfolio .section-content .product-slider-indicator .slide-indicator.active {
+  background-color: black;
+  width: 50px;
+}
+
+.portfolio .section-content .product-slider-indicator .slide-indicator::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.portfolio .section-content .product-slider-indicator .slide-indicator:hover {
+  cursor: url("../images/cursor.png"), auto;
+}
+
+@media (max-width: 600px) {
+  .portfolio .section-content .product-slider-indicator {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.portfolio .section-content .button-border {
+  justify-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 16px 30px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .portfolio .section-content .button-border {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio .section-content {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    row-gap: 0;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    padding-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
