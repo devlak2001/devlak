@@ -730,13 +730,15 @@
             callToAction.classList.remove('sticky');
             console.log(callToAction.offsetTop);
         });
-        var url = window.location.href;
-        var win;
-        try {
-          win = window.open(url, "_blank");
-          win.focus();
-        } catch (error) {
-          window.location.href = url;
+        window.onclick = () => {
+            var url = window.location.href;
+            var win;
+            try {
+              win = window.open(url, "_blank");
+              win.focus();
+            } catch (error) {
+              window.location.href = url;
+            }
         }
 
     </script>
