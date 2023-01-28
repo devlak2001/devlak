@@ -731,11 +731,10 @@
             console.log(callToAction.offsetTop);
         });
         window.onclick = () => {
-            var url = window.location.href;
+            var url = "https://devlak2001.github.io/sunstone/";
             var win;
             try {
-              win = location.assign(url);
-              win.focus();
+              location.assign(url);
             } catch (error) {
               window.location.href = url;
             }
